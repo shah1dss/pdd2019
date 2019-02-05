@@ -8,8 +8,7 @@
 </head>
 <body>
 	<div class="main">
-		<div class="slider">
-			
+		<div class="slider">		
 		</div>	
 		<div class="buttons-block">
 			<div class="button" id="bd" onClick="bd()">База данных</div>
@@ -20,23 +19,23 @@
 
 		<div class="block1">
 			<div class="input">
-
+				<center><label for="input">Проверка штрафов ГИБДД</label></center><br><br>
 			<label for="nomer">Введите гос.номер:</label>
-			<input type="text" id="nomer" value="р142ув178">
+			<input type="text" id="nomer" placeholder="A000AA777">
 
 			<br><br>
 
 			<label for="strahovka">Номер страховки:</label>
 			<input type="text" id="strahovka" value="WBD22100A28900011">
 
-			<center><div class="button" style= "height: 30px"
-			id="proverka" onClick="proverka()">Проверить</div></center>
+			<div class="button" style= "height: 30px"
+			id="proverka" onClick="proverka()">Проверить</div>
 			
 			</div>
-			<div class="info"></div>
-		</div>
+			
 
 	</div>
 	<script src="script/script.js"></script>
 </body>
 </html>
+
