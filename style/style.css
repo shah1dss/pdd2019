@@ -11,9 +11,9 @@ body {
 #find-block-table>table tbody tr:hover {background: #f5f5f5;} /*e8f6ff*/
 
 .dws {
-	position: absolute;
-	top: 50%;
-	left: 50%;
+position: absolute;
+top: 50%;
+left: 50%;
 -webkit-transform: translate(-50%, -50%);
 -moz-transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
@@ -34,3 +34,4 @@ transform: translate(-50%, -50%);
  font-family: Arial, sans-serif;
  position: relative;
 }
+апвыафыа
