@@ -7,15 +7,15 @@
 </head>
 <body>
 	<div class="main">
-			<center><img src="pdd1.jpg" alt="11">
-				<br><br>
-			<input type="submit">
-			<input type="submit">
-			<input type="submit">
-			</center>
-			</div>
-	<div class="dws">
-		<a href="#" class="butt">button</a>
+		<div class="slider">
+			
+		</div>	
+	<div class="buttons-block">
+		<div class="button">1</div>
+		<div class="button">2</div>
+		<div class="button">3</div>
+	</div>
+	
 	</div>
 </body>
 </html>
