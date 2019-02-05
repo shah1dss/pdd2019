@@ -55,9 +55,10 @@ body {
 .block1>div{
 	border: 1px solid black;
 }
-.block1>.input{
-	width: 100%;
+.input{
+	width: 500px;
 	height: 100%; 
+	margin:0 auto;
 	
 }
 /*#bd,#pdd,#sbd*/#proverka{

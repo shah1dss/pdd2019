@@ -19,18 +19,18 @@
 
 		<div class="block1">
 			<div class="input">
-				<center><label for="input">Проверка штрафов ГИБДД</label></center><br><br>
-			<label for="nomer">Введите гос.номер:</label>
-			<input type="text" id="nomer" placeholder="A000AA777">
+				<label for="input">Проверка штрафов ГИБДД</label><br><br>
+				<label for="nomer">Введите гос.номер:</label>
+				<input type="text" id="nomer" placeholder="A000AA777">
 
-			<br><br>
+				<br><br>
 
-			<label for="strahovka">Номер страховки:</label>
-			<input type="text" id="strahovka" value="WBD22100A28900011">
+				<label for="strahovka">Номер страховки:</label>
+				<input type="text" id="strahovka" value="WBD22100A28900011">
 
-			<div class="button" style= "height: 30px"
-			id="proverka" onClick="proverka()">Проверить</div>
-			
+				<div class="button" style= "height: 30px"
+				id="proverka" onClick="proverka()">Проверить</div>
+				
 			</div>
 			
 
