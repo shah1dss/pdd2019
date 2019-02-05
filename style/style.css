@@ -14,6 +14,7 @@ body {
 
 
 .main {
+	margin:0 auto;
 	width: 900px;
 	height: auto;
 	background-color: #cecece;
@@ -25,12 +26,15 @@ body {
 	height: 350px;
 	background-color: pink;
 	margin-bottom: 10px; 
+	background-image: url(../pdd1.jpg);
+	background-clip: padding-box;
 }
 
 .buttons-block {
 	width: 880px;
-	height: 100px;
+	height: 30px;
 	border: 1px solid black;
+	margin-bottom: 10px;
 	padding: 10px;	
 }
 .button {
@@ -38,7 +42,35 @@ body {
 	width: 33%;
 	height: 100%;
 	border: 1px solid black;
+	border-radius: 10px;
+	text-align: center;
 }
-.button:nth-child(1) {
+
+.block1 {
+	width: 880px;
+	height: 300px;
+	border: 1px solid black;
+	padding: 10px;
+}
+.block1>div{
+	border: 1px solid black;
+}
+.block1>.input,.info{
+	width: 430px;
+	height: 100%;
+	float: left;
+	
+}
+.input{
 	margin-right: 10px;
+}
+#bd,#pdd,#sbd,#proverka{
+	background-color: #E6E6FA;
+
+}
+#bd:hover,#pdd:hover,#sbd:hover,#proverka:hover{
+	box-shadow: 0 3px 3px;
+	-webkit-transition: box-shadow 0.1s; 
+	-moz-transition: box-shadow 0.1s; 
+	-o-transition: box-shadow 0.1s;
 }

@@ -2,20 +2,41 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Учет нарушений ПДД</title>
 	<link rel="stylesheet" href="style/style.css">
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 	<div class="main">
 		<div class="slider">
 			
 		</div>	
-	<div class="buttons-block">
-		<div class="button">1</div>
-		<div class="button">2</div>
-		<div class="button">3</div>
+		<div class="buttons-block">
+			<div class="button" id="bd" onClick="bd()">База данных</div>
+			<div class="button" id="pdd" onClick="pdd()" >Штрафы ПДД</div>
+			<div class="button" id="sbd">Схему данных</div>
+		</div>
+
+
+		<div class="block1">
+			<div class="input">
+
+			<label for="nomer">Введите гос.номер:</label>
+			<input type="text" id="nomer" value="р142ув178">
+
+			<br><br>
+
+			<label for="strahovka">Номер страховки:</label>
+			<input type="text" id="strahovka" value="WBD22100A28900011">
+
+			<center><div class="button" style= "height: 30px"
+			id="proverka" onClick="proverka()">Проверить</div></center>
+			
+			</div>
+			<div class="info"></div>
+		</div>
+
 	</div>
-	
-	</div>
+	<script src="script/script.js"></script>
 </body>
 </html>
