@@ -14,7 +14,6 @@ $row=$result->fetch();
 
 $sql = "SELECT * FROM `drivers` WHERE `kod_driver`= '".$row ['kod_driver']."'";
 $result = $connection->query($sql);
-echo $sql;
 $row=$result->fetch();
 ?>
 
@@ -23,13 +22,15 @@ $row=$result->fetch();
 <table id="table-after-search">
 	<haeder><meta charset="UTF-8"></header>
 	<thead>
-    	<tr>
-    <td>Фамилия:</td>
-     		 
-    <td><?php 
-    echo $row ['surname'];
-
-    ?></td>
+    <td>Фамилия:</td><br>
+    <td>Имя:</td>
+    <td>Отчество:</td>		 
+    <td>
+      <?php 
+    echo $row ['surname'], $row ['name'], $row ['fathername'];;
+    ?>
+      
+    </td>
     
        </tr>
   	</thead>
