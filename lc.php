@@ -22,17 +22,14 @@ $row=$result->fetch();
 <table id="table-after-search">
 	<haeder><meta charset="UTF-8"></header>
 	<thead>
-    <td>Фамилия:</td><br>
-    <td>Имя:</td>
-    <td>Отчество:</td>		 
-    <td>
-      <?php 
-    echo $row ['surname'], $row ['name'], $row ['fathername'];;
-    ?>
-      
-    </td>
+    <tr><td>Фамилия:</td> <td><?php echo $row ['surname']; ?></td></tr>
+    <tr><td>Имя:</td>  <td><?php echo $row ['name']; ?></td></tr>
+    <tr><td>Отчество:</td> <td><?php echo $row ['fathername']; ?></td></tr>
     
-       </tr>
+    
+    
+    
+
   	</thead>
   	<tbody>
 	</tbody>

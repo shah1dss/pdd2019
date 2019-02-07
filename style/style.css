@@ -185,3 +185,13 @@ float: left;
 .lc1 {
 	border: 1px solid black;
 }
+
+table {width: 500px; border-collapse: collapse;}
+table td {padding: 12px 5px 12px 10px;}
+
+table tr {border-bottom: 1px solid #e8e9eb;}
+table tbody tr:hover {background: #f5f5f5;} /*e8f6ff*/
+table td:first-child{
+	font-weight: 800;
+	width: 100px;
+}
