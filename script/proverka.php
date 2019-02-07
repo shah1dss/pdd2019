@@ -1,5 +1,7 @@
 <?php 
 include("link_bd.php");
+
+
 if (isset($_GET["nomer"]) && isset($_GET["strahovka"])) { 
 
 $nomer = $_GET["nomer"]; 
