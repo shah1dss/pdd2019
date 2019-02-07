@@ -42,12 +42,12 @@
 
 	<div class="block3">
 			<div id="nomer_input">
-				<div><input type="text" id="nomer" placeholder="A000AA"></div>
-				<div><input type="text" id="region" placeholder="777"></div>
+				<div><input type="text" id="nomer" placeholder="A000AA" value="р142ув"></div>
+				<div><input type="text" id="region" placeholder="777" value="178"></div>
 			</div>
 			<br><br>
 					<div id="strahovka_input">
-						<input type="text" id="strahovka" placeholder="99АА999999">
+						<input type="text" id="strahovka" placeholder="99АА999999" value="87AB999999" >
 					</div>
 
 	</div>		

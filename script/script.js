@@ -36,7 +36,7 @@ type: "GET",
 url: "script/proverka.php", 
 data: { nomer: nomer.value+region.value, strahovka: strahovka.value }, 
 success: function(data) { 	
-if (data == "да") {alert('Вы успешно зашли в личный кабинет')} 
+if (data == "да") {location.href = "lc.php?kod_avto="+nomer.value+region.value+"&strahovka="+strahovka.value} 
 if (data == "не") {alert('Таких данных в базе нет')} 
 } 
 }); 
