@@ -22,6 +22,15 @@ var nomer = document.getElementById("nomer");
 var region = document.getElementById("region");
 var strahovka = document.getElementById("strahovka"); 
 
+
+
+if (nomer.value == "" || region.value == "" || strahovka.value == "" ) {
+	alert('Вы что-то не ввели!!!!!!!');
+	return;
+}
+
+
+
 $.ajax({ 
 type: "GET", 
 url: "script/proverka.php", 
@@ -32,3 +41,5 @@ if (data == "не") {alert('Таких данных в базе нет')}
 } 
 }); 
 } 
+
+

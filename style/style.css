@@ -10,14 +10,6 @@ font-family: 'Montserrat', sans-serif;
 	padding: 10px;
 }
 
-/*.slider {
-	width: 100%;
-	height: 350px;
-	margin-bottom: 10px; 
-	background-image: url(../pdd1.jpg);
-	background-size: cover;
-	background-clip: padding-box;
-}*/
 
 .buttons-block {
 	width: 880px;
@@ -76,7 +68,7 @@ color: brown;
 #strahovka_input {
 	width: 250px;
 	height: 50px;
-	background-image: url(../strax.jpg);
+	background-image: url(../src/strax.jpg);
 }
 
 #nomer_input {
@@ -101,7 +93,7 @@ float: left;
 #region {
 	width: 70px;
 	height: 40px;
-	background-image: url(../2.png);
+	background-image: url(../src/2.png);
 	background-size: cover;
 	font-size: 23pt;
 	font-weight: 600;
@@ -169,23 +161,23 @@ float: left;
 }
  
 .slide:nth-of-type(1) {
-    background-image: url(../dps1.jpg);
+    background-image: url(../src/dps1.jpg);
     background-size: cover;
 
 }
 .slide:nth-of-type(2) {
-     background-image: url(../dps2.jpeg);
+     background-image: url(../src/dps2.jpeg);
     background-size: cover;
 }
 .slide:nth-of-type(3) {
-     background-image: url(../dps3.jpg);
+     background-image: url(../src/dps3.jpg);
     background-size: cover;}
 .slide:nth-of-type(4) {
-     background-image: url(../dps4.jpg);
+     background-image: url(../src/dps4.jpg);
     background-size: cover;
 }
 .slide:nth-of-type(5) {
-     background-image: url(../dps5.jpg);
+     background-image: url(../src/dps5.jpg);
     background-size: cover;
 }
 
