@@ -18,7 +18,7 @@
     <li class="slide">НЕ ПРЕВЫШАЙТЕ</li>
     <li class="slide">НЕ ОБГОНЯЙТЕ</li>
     <li class="slide">НЕ СИГНАЛЬТЕ</li>
-    <li class="slide">ТОЛЬКО ВКИДЫВАЙТЕ ПАКИЧ!</li>
+    <li class="slide">Полиция!</li>
 </ul>
 
 		<div class="buttons-block">
