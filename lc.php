@@ -29,19 +29,32 @@ $row=$result->fetch();
 	$sql = "SELECT * FROM `avto` WHERE `kod_avto`= '".$row ['kod_avto']."'";
 	$result = $connection->query($sql);
 	$row=$result->fetch();
-	 ?>
+	?>
 
 
     <tr><td>Автомобиль:</td> <td><?php echo $row ['model']; ?></td></tr>
     <tr><td>Гос.номер:</td> <td><?php echo $row ['gos_nomer']; ?></td></tr>
+
 	<?php 
-	$sql = "SELECT * FROM  `narusheniya` WHERE `kod_avto` = '".$row ['kod_avto']."'";
+	$sql = "SELECT * FROM  `narusheniya` WHERE `kod_avto` = '".$row['kod_avto']."'";
 	$result = $connection->query($sql);
 	$row=$result->fetch();
-	 ?>
+	?>
 	 <tr><td>Дата нарушения:</td> <td><?php echo $row ['data']; ?></td></tr>
     <tr><td>Время нарушения:</td> <td><?php echo $row ['time']; ?></td></tr>
 
+<?php
+$sql = "SELECT `id_narush` FROM  `narusheniya` WHERE `kod_avto` = '".$row ['kod_avto']."'";
+$result = $connection->query($sql);
+$row=$result->fetch();
+
+$sql = "SELECT * FROM  `vid_narush` WHERE `id_narush` = '".$row ['id_narush']."'";
+$result = $connection->query($sql);
+$row=$result->fetch();
+?>
+
+ <tr><td>Нарушение:</td> <td><?php echo $row ['name_narush']; ?></td></tr>
+    <tr><td>Цена штрафа:</td> <td><?php echo $row ['price_narush']; ?></td></tr>
 
   	</thead>
   	<tbody>
