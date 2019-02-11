@@ -1,5 +1,5 @@
 function bd() {
-	alert("privet");
+	location.href = "show_bd.php";
 }
 
 var slides = document.querySelectorAll('#slides .slide');

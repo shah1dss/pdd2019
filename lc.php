@@ -1,23 +1,25 @@
 <?php 
 include("script/link_bd.php");
 
-$strahovka=$_GET['strahovka'];
-
-
-$sql = "SELECT `kod_avto` FROM  `avto` WHERE `strahovka` = '".$strahovka."'";
+$sql = "SELECT * FROM  `drivers` WHERE `kod_avto` =(SELECT `kod_avto` FROM  `avto` WHERE `strahovka` = '".$_GET['strahovka']."')";
 $result = $connection->query($sql);
-$row=$result->fetch();
+$driver=$result->fetch();
 
-$sql = "SELECT * FROM  `drivers` WHERE `kod_avto` = '".$row ['kod_avto']."'";
+$sql = "SELECT * FROM `avto` WHERE `kod_avto`= '".$driver ['kod_avto']."'";
 $result = $connection->query($sql);
-$row=$result->fetch();
+$avto=$result->fetch();
 
+$sql = "SELECT * FROM  `narusheniya` WHERE `kod_avto` = '".$driver ['kod_avto']."'";
+$result = $connection->query($sql);
+$narush=$result->fetch();
 ?>
 
 <link rel="stylesheet" href="style/style.css">
+<haeder><meta charset="UTF-8"></header>
 
 <div class="lcm"> 
 <table id="table-after-search">
+<<<<<<< HEAD
 	<haeder><meta charset="UTF-8"></header>
 	<thead>
 		
@@ -59,7 +61,17 @@ $row=$result->fetch();
   	</thead>
   	<tbody>
 	</tbody>
+=======
+    <tr><td>Фамилия:</td> <td><?php echo $driver ['surname']; ?></td></tr>
+    <tr><td>Имя:</td>  <td><?php echo $driver ['name']; ?></td></tr>
+    <tr><td>Отчество:</td> <td><?php echo $driver ['fathername']; ?></td></tr>
 
+    <tr><td>Автомобиль:</td> <td><?php echo $avto ['model']; ?></td></tr>
+    <tr><td>Гос.номер:</td> <td><?php echo $avto ['gos_nomer']; ?></td></tr>
+>>>>>>> 523f0c614e76157699bb97498a116990d5ba8b6b
+
+	<tr><td>Дата нарушения:</td> <td><?php echo $narush ['data']; ?></td></tr>
+    <tr><td>Время нарушения:</td> <td><?php echo $narush ['time']; ?></td></tr>
 </table>
 </div>
 
