@@ -200,3 +200,21 @@ table td:first-child{
 	display: flex;
 	justify-content: center;
 }
+
+
+.musornyi_bak {
+	padding: 20px;
+	margin: 0 auto;
+	border: 20px solid red;
+	width: 300px;
+	height: auto;
+}
+
+.adm_label {
+	text-align: left;
+
+}
+.adm_buttons {
+	text-align: right;
+
+}

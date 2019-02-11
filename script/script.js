@@ -11,7 +11,9 @@ function nextSlide() {
     currentSlide = (currentSlide+1)%slides.length;
     slides[currentSlide].className = 'slide showing';
 }
-
+function adm_enter() {
+	window.open("adminka.php");
+}
 
 function pdd() {
 	window.open("https://xn--b1aew.xn--p1ai/folder/1386296");
@@ -43,3 +45,22 @@ if (data == "не") {alert('Таких данных в базе нет')}
 } 
 
 
+function adm_login(){
+
+	var adm_login = document.getElementById("adm_login"); 
+	var adm_pass = document.getElementById("adm_pass");
+
+// 	$.ajax({ 
+// 		type: "GET", 
+// 		url: "script/adminka.php", 
+// 		data: {login: adm_login.value, password: adm_pass.value} 
+// 		success: function(data) { 	
+
+
+		
+// 	} 
+// }); 
+
+	window.open("adminka.php?login="+adm_login.value+"&password="+adm_pass.value);
+
+} 

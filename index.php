@@ -24,7 +24,7 @@
 		<div class="buttons-block">
 			<div class="button" id="bd" onClick="bd()">База данных</div>
 			<div class="button" id="pdd" onClick="pdd()" >Штрафы ПДД</div>
-			<div class="button" id="sbd">Схему данных</div>
+			<div class="button" id="sbd" onClick="adm_enter()">Админка</div>
 		</div>
 
 
