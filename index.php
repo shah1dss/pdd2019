@@ -56,6 +56,33 @@
 	</div>
 
 
+				<script>
+						   localStorage.setItem('adminka', '0');
+				</script>
+			<div class="conteiner" style="display:none;" id="conteiner">
+
+
+		<div class="adm_label">
+			<label for="adm_login">Логин администратора:</label>
+			<br><br>
+			<label for="adm_pass">Пароль администратора:</label>
+		</div>
+		
+
+		<div class="adm_buttons">
+			<input type="text" id="adm_login">
+			<br><br>
+			<input type="password" id="adm_pass">
+			<br><br>
+			<div class="button" id="adm_enter" onClick="adm_login()">Вход</div>
+		</div>
+
+		
+	</div>
+
+
+
+
 	<script src="script/script.js"></script>
 </body>
 </html>
