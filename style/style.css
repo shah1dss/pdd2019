@@ -21,11 +21,10 @@ font-family: 'Montserrat', sans-serif;
 	margin-top:10px;
 }
 .button {
+	cursor: pointer;
 	float:left;
 	width: 33%;
 	height: 100%;
-	/*border: 1px solid black;*/
-	/*border-radius: 8px;*/
 	text-align: center;
 }
 
@@ -43,7 +42,7 @@ font-family: 'Montserrat', sans-serif;
 	background-color: #dff0fa;
 
 }
-#bd:hover,#pdd:hover,#sbd:hover,#proverka:hover{
+#bd:hover,#pdd:hover,#sbd:hover,#proverka:hover,#adm_enter:hover{
 	box-shadow: 0 3px 3px;
 	background-color: #19628d;
 	-webkit-transition: box-shadow 0.1s; 
@@ -218,3 +217,33 @@ table td:first-child{
 	text-align: right;
 
 }
+
+a.button9 {
+
+  display: inline-block;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(68,68,68);
+  text-decoration: none;
+  user-select: none;
+  padding: .2em 1.2em;
+  outline: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 2px;
+  background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+  transition: all .218s ease 0s;
+}
+a.button9:hover {
+  color: rgb(24,24,24);
+  border: 1px solid rgb(198,198,198);
+  background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+a.button9:active {
+  color: rgb(51,51,51);
+  border: 1px solid rgb(204,204,204);
+  background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+  box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+}
+
