@@ -61,7 +61,7 @@ function adm_login(){
 		data: {login: adm_login.value, password: adm_pass.value}, 
 		success: function(data) { 	
 		if (data == "да") {location.href = "adminka.php?adm_log="+adm_login.value+"&adm_pas="+adm_pass.value+"&vhod="+vhod} 
-		if (data == "не") {alert('Администратор не найден.')} 
+		if (data == "не") {alert('ТЫ НЕ АДМИН, ТЫ ВРУН')} 
 
 		
 	} 

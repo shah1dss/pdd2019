@@ -4,11 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Админ панель</title>
 	<link rel="stylesheet" href="style/style.css">
-	<?php  include("script/link_bd.php");?>
+	<?php  include("script/link_bd.php");
+	?>
 </head>
 <body>
 
-	<div class="conteiner1" style="border:2px solid black;padding: 10px;">
+	<div class="conteiner1">
 		<table>
 			<tr>
 				<td>kod_avto</td>
