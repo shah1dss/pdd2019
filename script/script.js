@@ -53,13 +53,14 @@ function adm_login(){
 
 	var adm_login = document.getElementById("adm_login"); 
 	var adm_pass = document.getElementById("adm_pass");
+	var vhod = "1";
 
 	$.ajax({ 
 		type: "GET", 
 		url: "adminka.php",
 		data: {login: adm_login.value, password: adm_pass.value}, 
 		success: function(data) { 	
-		if (data == "да") {location.href = "adminka.php?adm_log="+adm_login.value+"&adm_pas="+adm_pass.value} 
+		if (data == "да") {location.href = "adminka.php?adm_log="+adm_login.value+"&adm_pas="+adm_pass.value+"&vhod="+vhod} 
 		if (data == "не") {alert('Администратор не найден.')} 
 
 		

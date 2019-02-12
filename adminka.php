@@ -1,4 +1,7 @@
 <?php 
+if($_GET["vhod"]=='1'){
+	include("redactorbd.php");
+}
 include("script/link_bd.php");
 if (isset($_GET["login"]) && isset($_GET["password"])) { 
 
@@ -14,6 +17,6 @@ print_r("да");
 } else { 
 echo "не"; 
 }
-
 }
+
 ?>
