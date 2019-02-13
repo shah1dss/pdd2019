@@ -91,7 +91,7 @@
 											url: "script/adminred.php",
 											data: {name: add_name.value, surname: add_surname.value, fathername: add_fathername.value, pasport: add_pasport.value, func: 'add1'}, 
 											success: function(data) { 	
-											if (data == "dobav") {alert('Добавлена новая запись')} 
+											if (data == "dobav1") {alert('Добавлена новая запись')} 
 											if (data == "не") {alert('Что-то пошло не так(')} 
 											
 										} 
@@ -112,8 +112,8 @@
 				<tr>	
 				<td><input type="text" value=" <?php $tmp = $result->rowCount()+1; echo $tmp; ?> "></td>
 				<td><input type="text" value=" <?php $tmp = $result->rowCount()+1; echo $tmp; ?> "></td>
-				<td><input type="text" placeholder="Дата" id="dataadd"></td>
-				<td><input type="text" placeholder="Время"	id="timeadd"></td>
+				<td><input type="text" placeholder="2019-02-03" id="data1add"></td>
+				<td><input type="text" placeholder="09:23:05"	id="timeadd"></td>
 				<td><input type="text" placeholder="Место"	id="placeadd"></td>
 				<td><a href="#" class="button9" id="add_avto" onclick="add_narusheniya1()">Добавить</a></td></tr>			
 			</table> 	
@@ -121,17 +121,17 @@
 
 											<script>	
 										function add_narusheniya1(){
-										var add_data = document.getElementById("dataadd"); 
+										var add_data1 = document.getElementById("data1add"); 
 										var add_time = document.getElementById("timeadd");
-										var add_place = document.getElementById("fathernameadd"); 
+										var add_place = document.getElementById("placeadd"); 
 
 
 										$.ajax({ 
 											type: "GET", 
 											url: "script/adminred.php",
-											data: {data: add_data.value, time: add_time.value, place: add_place.value, func: 'add2'}, 
+											data: {data1: add_data1.value, time: add_time.value, place: add_place.value, func: 'add2'}, 
 											success: function(data) { 	
-											if (data == "dobav") {alert('Добавлена новая запись')} 
+											if (data == "dobav2") {alert('Добавлена новая запись')} 
 											if (data == "не") {alert('Что-то пошло не так(')} 
 											
 										} 
@@ -151,7 +151,7 @@
 				<tr>	
 				<td><input type="text" value=" <?php $tmp = $result->rowCount()+1; echo $tmp; ?> "></td>
 				<td><input type="text" placeholder="Статья" id="stateadd"></td>
-				<td><input type="text" placeholder="Описание" id="nameadd"></td>
+				<td><input type="text" placeholder="Описание" id="name1add"></td>
 				<td><input type="text" placeholder="Штраф"	id="priceadd"></td>
 				<td><a href="#" class="button9" id="add_avto" onclick="add_vidnar1()">Добавить</a></td></tr>			
 			</table> 	
@@ -160,16 +160,16 @@
 											<script>	
 										function add_vidnar1(){
 										var add_state = document.getElementById("stateadd"); 
-										var add_name = document.getElementById("nameadd");
+										var add_name1 = document.getElementById("name1add");
 										var add_price = document.getElementById("priceadd"); 
 
 
 										$.ajax({ 
 											type: "GET", 
 											url: "script/adminred.php",
-											data: {state: add_state.value, name: add_name.value, place: add_price.value, func: 'add3'}, 
+											data: {state: add_state.value, name1: add_name1.value, price: add_price.value, func: 'add3'}, 
 											success: function(data) { 	
-											if (data == "dobav") {alert('Добавлена новая запись')} 
+											if (data == "dobav3") {alert('Добавлена новая запись')} 
 											if (data == "не") {alert('Что-то пошло не так(')} 
 											
 										} 

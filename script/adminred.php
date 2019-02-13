@@ -12,22 +12,22 @@
 	  		$sql= "INSERT INTO `drivers`(`kod_avto`, `surname`, `name`, `fathername`, `pasport`)  VALUES 
 	  		(NULL, ".$_GET["name"].", ".$_GET["surname"].", ".$_GET["fathername"].",".$_GET["pasport"].")";
 			$result = $connection->query($sql); 
-			echo "dobav";
+			echo "dobav1";
 	  }
 
 
 	    if ($_GET["func"]=="add2") {
-	  		$sql= "INSERT INTO `narusheniya`(`kod_avto`, `id_narush`, `data`, `time`, `place`)  VALUES 
-	  		(NULL, NULL, ".$_GET["data"].", ".$_GET["time"].",".$_GET["place"].")";
+	  		$sql= "INSERT INTO `narusheniya` (`kod_avto`, `id_narush`, `data`, `time`, `place`)  VALUES 
+	  		(NULL, NULL, ".$_GET["data1"].", ".$_GET["time"].",".$_GET["place"].")";
 			$result = $connection->query($sql); 
-			echo "dobav";
+			echo "dobav2";
 	  }
 
 	   if ($_GET["func"]=="add3") {
-	  		$sql= "INSERT INTO `vid_narush`(`id_narush`, `state_narush`, `name_narush`, `price_narush`)   VALUES 
-	  		(NULL,".$_GET["state"].", ".$_GET["name"].",".$_GET["price"].")";
+	  		$sql= "INSERT INTO `vid_narush` (`id_narush`, `state_narush`, `name_narush`, `price_narush`)   VALUES 
+	  		(NULL,".$_GET["state"].", ".$_GET["name1"].",".$_GET["price"].")";
 			$result = $connection->query($sql); 
-			echo "dobav";
+			echo "dobav3";
 	  }
 
 
