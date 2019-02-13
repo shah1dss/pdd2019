@@ -3,21 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Учет нарушений ПДД</title>
+		<style>
+		body {
+			background:url(../src/fon1.jpg);
+		}	
+	</style>
 	<link rel="stylesheet" href="style/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900" rel="stylesheet">
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-	<div class="main">
-					<!-- <div class="slider">	
 
-		</div>	 -->
+	<div class="main">
+	
+
 		<ul id="slides">
-    <li class="slide showing">НЕ НАРУШАЙТЕ</li>
-    <li class="slide">НЕ ПРЕВЫШАЙТЕ</li>
-    <li class="slide">НЕ ОБГОНЯЙТЕ</li>
-    <li class="slide">НЕ СИГНАЛЬТЕ</li>
-    <li class="slide">Полиция!</li>
+    <li class="slide showing">Добро</li>
+    <li class="slide">Пожаловать</li>
+    <li class="slide">На лучший</li>
+    <li class="slide">Сайт</li>
+    <li class="slide">По проверке штрафов</li>
 </ul>
 
 		<div class="buttons-block">
@@ -70,6 +75,7 @@
 		
 
 		<div class="adm_buttons">
+			<br><br><br>
 			<input type="text" id="adm_login">
 			<br><br>
 			<input type="password" id="adm_pass">
