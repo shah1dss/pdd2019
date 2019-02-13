@@ -40,6 +40,7 @@
 	
 
 	<div class="block3">
+
 			<div id="nomer_input">
 				<div><input type="text" id="nomer" placeholder="A000AA" ></div>
 				<div><input type="text" id="region" placeholder="777" ></div>

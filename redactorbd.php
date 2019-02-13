@@ -24,6 +24,7 @@
 				<td>model</td>
 				<td>gos_nomer</td>
 				<td>strahovka</td>
+				<center>Таблица автомобили</center>
 			</tr>
 			<tr>	
 			<td><input type="text" value=" <?php $tmp = $result->rowCount()+1; echo $tmp; ?> "></td>
@@ -35,27 +36,146 @@
 		</table>
 	</div>
 
-
-	<script>	
-	function add_avto1(){
-	console.log ("HUYE");
-	var add_model = document.getElementById("modeladd"); 
-	var add_nomer = document.getElementById("nomeradd");
-	var add_strahovka = document.getElementById("strahovkaadd"); 
+										<script>	
+										function add_avto1(){
+										var add_model = document.getElementById("modeladd"); 
+										var add_nomer = document.getElementById("nomeradd");
+										var add_strahovka = document.getElementById("strahovkaadd"); 
 
 
-	$.ajax({ 
-		type: "GET", 
-		url: "script/adminred.php",
-		data: {model: add_model.value, nomer: add_nomer.value, strahovka: add_strahovka.value, func: 'add'}, 
-		success: function(data) { 	
-		if (data == "dobav") {alert('Добавлена новая запись')} 
-		if (data == "не") {alert('пошел нахуй с таблицы')} 
-		
-	} 
-	}); 
-	}
+										$.ajax({ 
+											type: "GET", 
+											url: "script/adminred.php",
+											data: {model: add_model.value, nomer: add_nomer.value, strahovka: add_strahovka.value, func: 'add'}, 
+											success: function(data) { 	
+											if (data == "dobav") {alert('Добавлена новая запись')} 
+											if (data == "не") {alert('Что-то пошло не так(')} 
+											
+										} 
+										}); 
+										}
+										</script>
 
-	</script>
+	
+
+		<div class="conteiner2">
+			<table>
+				<tr>
+					<td>kod_avto</td>
+					<td>name</td>
+					<td>surname</td>
+					<td>fathername</td>
+					<td>pasport</td>
+						<center>Таблица водители</center>
+				</tr>
+				<tr>	
+				<td><input type="text" value=" <?php $tmp = $result->rowCount()+1; echo $tmp; ?> "></td>
+				<td><input type="text" placeholder="Имя" id="nameadd"></td>
+				<td><input type="text" placeholder="Фамилия" id="surnameadd"></td>
+				<td><input type="text" placeholder="Отчетсво"	id="fathernameadd"></td>
+				<td><input type="text" placeholder="Паспорт"	id="pasportadd"></td>
+				<td><a href="#" class="button9" id="add_avto" onclick="add_drivers1()">Добавить</a></td></tr>			
+			</table> 	
+		</div>
+
+											<script>	
+										function add_drivers1(){
+										var add_name = document.getElementById("nameadd"); 
+										var add_surname = document.getElementById("surnameadd");
+										var add_fathername = document.getElementById("fathernameadd"); 
+										var add_pasport = document.getElementById("pasportadd"); 
+
+
+										$.ajax({ 
+											type: "GET", 
+											url: "script/adminred.php",
+											data: {name: add_name.value, surname: add_surname.value, fathername: add_fathername.value, pasport: add_pasport.value, func: 'add1'}, 
+											success: function(data) { 	
+											if (data == "dobav") {alert('Добавлена новая запись')} 
+											if (data == "не") {alert('Что-то пошло не так(')} 
+											
+										} 
+										}); 
+										}
+										</script>
+
+			<div class="conteiner3">
+			<table>
+				<tr>
+					<td>kod_avto</td>
+					<td>id_avto</td>
+					<td>data</td>
+					<td>time</td>
+					<td>place</td>
+						<center>Таблица нарушения</center>
+				</tr>
+				<tr>	
+				<td><input type="text" value=" <?php $tmp = $result->rowCount()+1; echo $tmp; ?> "></td>
+				<td><input type="text" value=" <?php $tmp = $result->rowCount()+1; echo $tmp; ?> "></td>
+				<td><input type="text" placeholder="Дата" id="dataadd"></td>
+				<td><input type="text" placeholder="Время"	id="timeadd"></td>
+				<td><input type="text" placeholder="Место"	id="placeadd"></td>
+				<td><a href="#" class="button9" id="add_avto" onclick="add_narusheniya1()">Добавить</a></td></tr>			
+			</table> 	
+		</div>
+
+											<script>	
+										function add_narusheniya1(){
+										var add_data = document.getElementById("dataadd"); 
+										var add_time = document.getElementById("timeadd");
+										var add_place = document.getElementById("fathernameadd"); 
+
+
+										$.ajax({ 
+											type: "GET", 
+											url: "script/adminred.php",
+											data: {data: add_data.value, time: add_time.value, place: add_place.value, func: 'add2'}, 
+											success: function(data) { 	
+											if (data == "dobav") {alert('Добавлена новая запись')} 
+											if (data == "не") {alert('Что-то пошло не так(')} 
+											
+										} 
+										}); 
+										}
+										</script>
+
+				<div class="conteiner4">
+			<table>
+				<tr>
+					<td>id_narush</td>
+					<td>state_narush</td>
+					<td>name_narush</td>
+					<td>price_narush</td>
+						<center>Таблица нарушения</center>
+				</tr>
+				<tr>	
+				<td><input type="text" value=" <?php $tmp = $result->rowCount()+1; echo $tmp; ?> "></td>
+				<td><input type="text" placeholder="Статья" id="stateadd"></td>
+				<td><input type="text" placeholder="Описание" id="nameadd"></td>
+				<td><input type="text" placeholder="Штраф"	id="priceadd"></td>
+				<td><a href="#" class="button9" id="add_avto" onclick="add_vidnar1()">Добавить</a></td></tr>			
+			</table> 	
+		</div>
+
+											<script>	
+										function add_vidnar1(){
+										var add_state = document.getElementById("stateadd"); 
+										var add_name = document.getElementById("nameadd");
+										var add_price = document.getElementById("priceadd"); 
+
+
+										$.ajax({ 
+											type: "GET", 
+											url: "script/adminred.php",
+											data: {state: add_state.value, name: add_name.value, place: add_price.value, func: 'add3'}, 
+											success: function(data) { 	
+											if (data == "dobav") {alert('Добавлена новая запись')} 
+											if (data == "не") {alert('Что-то пошло не так(')} 
+											
+										} 
+										}); 
+										}
+										</script>
+
 </body>
 </html>

@@ -250,8 +250,29 @@ a.button9:active {
 .conteiner1 {
 	border:2px solid black;
 	padding: 5px;
-	width: 880px;
+	width: 1060px;
 	margin:0 auto;
+	margin-bottom: 20px;
+}
+.conteiner2  {
+	border:2px solid black;
+	padding: 5px;
+	width: 1060px;
+	margin:0 auto;
+	margin-bottom: 20px;
+}
 
-
+.conteiner3 {
+	border:2px solid black;
+	padding: 5px;
+	width: 1060px;
+	margin:0 auto;
+	margin-bottom: 20px;
+}
+.conteiner4  {
+	border:2px solid black;
+	padding: 5px;
+	width: 1060px;
+	margin:0 auto;
+	margin-bottom: 20px;
 }
