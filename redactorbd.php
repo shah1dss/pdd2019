@@ -181,6 +181,34 @@
 										}); 
 										}
 										</script>
+			<div class="conteiner5">
+				<div class="condel" >
+
+					<center>Удаление из БД всех записей связанных с определнным ID<br><br>
+				Введите kod_avto:
+				<input type="text" id="del">
+				<a href="#" class="button9"  onclick="del_all()">Удалить</a></center>
+			</div>
+				
+										<script>	
+										function del_all(){
+										var del = document.getElementById("del"); 
+
+										$.ajax({ 
+											type: "GET", 
+											url: "script/adminred.php",
+											data: {del: del.value, func: 'del'}, 
+											success: function(data) { 	
+											if (data == "del1") {alert('Данные удалены из таблицы')} 
+											if (data == "не") {alert('Что-то пошло не так(')} 
+											
+										} 
+										}); 
+										}
+										</script>
+
+
+			</div>
 
 </body>
 </html>

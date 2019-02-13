@@ -29,8 +29,14 @@
 			$result = $connection->query($sql); 
 			echo "dobav3";
 	  }
+	  if ($_GET["func"]=="del") {
+	  		$sql= "DELETE FROM `avto` WHERE `kod_avto` = ".$_GET["del"].";
+	  		 		DELETE FROM `drivers` WHERE `kod_avto` = ".$_GET["del"].";
+	  		  		DELETE FROM `narusheniya` WHERE `kod_avto` = ".$_GET["del"]."; 
+	  		  			DELETE FROM `vid_narush` WHERE `id_narush` = ".$_GET["del"]." "; 
+	  		$result = $connection->query($sql);
+			echo "del1";
 
-
-
+	}
 
  ?>
