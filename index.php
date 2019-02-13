@@ -9,10 +9,9 @@
 </head>
 <body>
 	<div class="main">
-		<!-- <div class="slider">	
+					<!-- <div class="slider">	
 
 		</div>	 -->
-
 		<ul id="slides">
     <li class="slide showing">НЕ НАРУШАЙТЕ</li>
     <li class="slide">НЕ ПРЕВЫШАЙТЕ</li>

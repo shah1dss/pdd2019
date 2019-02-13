@@ -27,6 +27,10 @@ function pdd() {
 	window.open("https://xn--b1aew.xn--p1ai/folder/1386296");
 }
 
+function test() {
+	console.log("ayeaye");
+}
+
 function proverka() { 
 	var nomer = document.getElementById("nomer"); 
 	var region = document.getElementById("region");
@@ -70,23 +74,3 @@ function adm_login(){
 
 } 
 
-function addavto1(){
-	console.log ("HUYE");
-	var add_model = document.getElementById("modeladd"); 
-	var add_nomer = document.getElementById("nomeradd");
-	var add_strahovka = document.getElementById("strahovkaadd"); 
-
-
-	$.ajax({ 
-		type: "GET", 
-		url: "script/adminred.php",
-		data: {model: add_model.value, nomer: add_nomer.value, strahovka: add_strahovka.value, func: 'add'}, 
-		success: function(data) { 	
-		if (data == "dobav") {alert('Добавлена новая запись')} 
-		if (data == "не") {alert('пошел нахуй с таблицы')} 
-		
-	} 
-}); 
-
-
-}
