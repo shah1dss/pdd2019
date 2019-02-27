@@ -28,7 +28,7 @@ function pdd() {
 }
 
 function test() {
-	console.log("ayeaye");
+	document.getElementById('modal').style.display = "block";
 }
 
 function proverka() { 
@@ -46,8 +46,12 @@ type: "GET",
 url: "script/proverka.php", 
 data: { nomer: nomer.value+region.value, strahovka: strahovka.value }, 
 success: function(data) { 	
-if (data == "да") {location.href = "lc.php?kod_avto="+nomer.value+region.value+"&strahovka="+strahovka.value} 
-if (data == "не") {alert('Таких данных в базе нет')} 
+// if (data == "да") {location.href = "lc.php?kod_avto="+nomer.value+region.value+"&strahovka="+strahovka.value} 
+if (data == "не") {alert('Таких данных в базе нет')}
+	else	{
+		document.getElementById("content").innerHTML = data;
+	}
+
 } 
 }); 
 } 

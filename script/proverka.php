@@ -11,7 +11,8 @@ $sql = "SELECT * FROM `avto` WHERE `gos_nomer` = '".$nomer."' AND `strahovka` = 
 $result = $connection->query($sql); 
 $assocArray = $result->fetch(); 
 if (($assocArray['strahovka'] == $strahovka) && ($assocArray['gos_nomer'] == $nomer)) { 
-print_r("да"); 
+include ("../lc.php");
+// print_r("да"); 
 } else { 
 echo "не"; 
 }
